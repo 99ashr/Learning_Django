@@ -8,10 +8,10 @@ var pet_name = prompt("What is the name of your pet?: ");
 var namecond = null;
 var agecond = null;
 var heightcond = null;
-var pet_namecond = null;
+var petcond = null;
 
 // Name Condition!!!
-if (first_name[0] == last_name[0]) {
+if (first_name[0] === last_name[0]) {
     namecond = true;
 } else {
     namecond = false;
@@ -29,13 +29,13 @@ if (height >= 170) {
     heightcond = false;
 }
 // Pet Name Condition!!!
-if (pet_name[-1] == 'y') {
-    pet_name = true;
+if (pet_name[pet_name.length - 1] === 'y') {
+    petcond = true;
 } else {
-    pet_name = false;
+    petcond = false;
 }
 
-if (namecond && agecond && heightcond && pet_namecond) {
+if (namecond && agecond && heightcond && pet cond) {
     console.log("You got it!!!hehehehehe....");
 } else {
     console.log("Fuck Off!");
