@@ -1,0 +1,35 @@
+/* .background {
+    width: 100px;
+    height: 50px;
+    padding: 0;
+    margin: 0;
+} */
+
+/* .line {
+    width: 112px;
+    height: 47px;
+    border-bottom: 1px solid red;
+    transform: translateY(-20px) translateX(5px) rotate(27deg);
+    position: absolute;
+    z-index: -1;
+} */
+
+/* .background>div {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+} */
+
+/* .bottom {
+    position: absolute;
+    bottom: 1px;
+    left: 1px;
+} */
+
+/* .top {
+    position: absolute;
+    top: 1px;
+    right: 1px;
+} */
