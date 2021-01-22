@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Welcome To Webuntu</title>
+	<link rel="stylesheet" href="home.css">
+	<script src="load.js"></script>
+</head>
+<body>
+	
+
+
+<div id="content">
+	<div class="header">
+		<a id="logo" href="home.html"><u><img src="logos/social/@ubuntu.png" style="border-color: firebrick;" alt="Webuntu" id="img" height="170px" width=180px"></u></a>
+		<ul id="header_bar">
+			<li id="home"><a href="home.html">Home</a></li>
+			<li><a href="#About">About us</a></li>
+			<li><a href="#Contact">Contact </a></li>
+			<li><a href="login_01.html"><img id="login" src="logos/Avatar/boy-14.png" width="80px" height="70px" border="1px" style="border-color: orange;" alt="Sign In/Sign Up"></a></li>
+		</ul>
+		<br>
+		<nav> <a id="webuntu" href="home.html">Webuntu <sup>@sh</sup></a></nav>
+		<div id="tym">You're Welcome Here!!!</div>
+	</div>
+
+		<!--<button onmouseover="this.innerHTML =new Date().toDateString();">The time is?</button>-->		
+		
+
+		<script>
+			var myimg=document.getElementById("img");
+			var imgArray=["logos/social/ubuntu_owl.png","logos/social/cononical_circle.png","logos/social/@ubuntu.png"];
+			var imgIndex=0;
+			function chnglogo () {
+				myimg.setAttribute("src", imgArray[imgIndex]);
+				imgIndex++;
+					if(imgIndex>=imgArray.length){
+						imgIndex=0;
+					}
+			}
+			setInterval(chnglogo,3000);
+		</script>
+		<script>
+			function tym_btn() {
+				//!!!Date!!!
+				//GMT Time
+				var d = new Date().toUTCString();
+				//Local Time
+				var l= new Date().toLocaleString();
+				//!!!GMT Array!!!
+				var date_array=new Array();
+				date_array=d.split(" ");
+				//Local Array
+				var local_array=new Array();
+				local_array=l.split(" ");
+				//alert(local_array);
+				local_date=local_array[0].split("/");
+				//alert(local_date);
+
+						document.getElementById("tym").innerHTML = date_array[0]+local_date[1]+" "+date_array[2];
+						//document.getElementById("tym").innerHTML = d;
+			//!!!Node!!!
+						var para = document.createElement("p");
+						var Time=document.createTextNode(local_array[1]+" "+local_array[2]);
+						document.getElementById("tym").appendChild(para);
+						para.appendChild(Time);
+					}
+			//tym_btn();
+			setInterval(tym_btn,1000);
+		</script>
+		<script>
+            var loginimg=document.getElementById("login");
+            var loginArray=['logos/Avatar/boy-15.png','logos/Avatar/027-boy-6.png','logos/Avatar/065-man-24.png','logos/Avatar/056-man-19.png','logos/Avatar/023-man-9.png','logos/Avatar/072-groom-1.png','logos/Avatar/057-man-20.png','logos/Avatar/girl-7.png','logos/Avatar/boy-2.png','logos/Avatar/004-woman-1.png','logos/Avatar/032-boy-1.png','logos/Avatar/096-man-31.png','logos/Avatar/girl-17.png','logos/Avatar/031-player.png','logos/Avatar/001-man.png','logos/Avatar/088-man-29.png','logos/Avatar/034-player-1.png','logos/Avatar/011-baseball-player.png','logos/Avatar/094-woman-33.png','logos/Avatar/052-man-15.png','logos/Avatar/053-man-16.png','logos/Avatar/042-girl.png','logos/Avatar/006-woman-3.png','logos/Avatar/022-wushu.png','logos/Avatar/048-table-tennis.png','logos/Avatar/073-sailor.png','logos/Avatar/015-muay-thai.png','logos/Avatar/012-woman-4.png','logos/Avatar/019-hockey-player.png','logos/Avatar/044-man-12.png','logos/Avatar/023-man-3.png','logos/Avatar/034-snowboard.png','logos/Avatar/063-man-23.png','logos/Avatar/boy-13.png','logos/Avatar/022-man-4.png','logos/Avatar/016-woman-10.png','logos/Avatar/009-man-3.png','logos/Avatar/boy-17.png','logos/Avatar/002-woman.png','logos/Avatar/004-woman-12.png','logos/Avatar/030-boy-3.png','logos/Avatar/024-man-2.png','logos/Avatar/087-woman-29.png','logos/Avatar/082-man-27.png','logos/Avatar/069-worker.png','logos/Avatar/050-american-football.png','logos/Avatar/049-cyclist.png','logos/Avatar/049-man-14.png','logos/Avatar/014-man-4.png','logos/Avatar/girl-21.png','logos/Avatar/027-man-10.png','logos/Avatar/075-bride.png','logos/Avatar/023-swimmer-1.png','logos/Avatar/054-man-17.png','logos/Avatar/boy-6.png','logos/Avatar/girl-8.png','logos/Avatar/girl-11.png','logos/Avatar/001-soccer-player.png','logos/Avatar/020-water-polo.png','logos/Avatar/girl-6.png','logos/Avatar/boy-5.png','logos/Avatar/girl-15.png','logos/Avatar/avatar.txt','logos/Avatar/039-woman-16.png','logos/Avatar/girl-19.png','logos/Avatar/037-scientist.png','logos/Avatar/024-horseman.png','logos/Avatar/021-woman-12.png','logos/Avatar/003-woman-13.png','logos/Avatar/girl-25.png','logos/Avatar/012-woman-7.png','logos/Avatar/078-woman-26.png','logos/Avatar/013-woman-3.png','logos/Avatar/girl-2.png','logos/Avatar/boy-21.png','logos/Avatar/034-woman-2.png','logos/Avatar/018-man-5.png','logos/Avatar/055-man-18.png','logos/Avatar/048-groom.png','logos/Avatar/036-snorkeling.png','logos/Avatar/086-punk.png','logos/Avatar/019-man-6.png','logos/Avatar/051-woman-21.png','logos/Avatar/014-fencer.png','logos/Avatar/005-racer.png','logos/Avatar/010-gymnast.png','logos/Avatar/029-curling.png','logos/Avatar/018-man-8.png','logos/Avatar/009-woman-7.png','logos/Avatar/030-king.png','logos/Avatar/050-woman-20.png','logos/Avatar/017-surfer.png','logos/Avatar/013-wrestler.png','logos/Avatar/boy-1.png','logos/Avatar/028-boy.png','logos/Avatar/083-guard.png','logos/Avatar/040-motocross.png','logos/Avatar/007-man-2.png','logos/Avatar/071-girl-1.png','logos/Avatar/001-man-13.png','logos/Avatar/021-water-polo-1.png','logos/Avatar/027-polo.png','logos/Avatar/010-woman-6.png','logos/Avatar/093-woman-32.png','logos/Avatar/girl-12.png','logos/Avatar/boy-3.png','logos/Avatar/031-boy-2.png','logos/Avatar/089-woman-30.png','logos/Avatar/girl.png','logos/Avatar/029-boy-4.png','logos/Avatar/boy-10.png','logos/Avatar/045-woman-18.png','logos/Avatar/038-viking.png','logos/Avatar/boy-7.png','logos/Avatar/girl-20.png','logos/Avatar/009-tennis-player.png','logos/Avatar/026-man.png','logos/Avatar/girl-10.png','logos/Avatar/girl-5.png','logos/Avatar/019-man-7.png','logos/Avatar/girl-13.png','logos/Avatar/003-runner.png','logos/Avatar/021-man-5.png','logos/Avatar/058-boy-2.png','logos/Avatar/002-taekwondo.png','logos/Avatar/038-bowler.png','logos/Avatar/037-skater.png','logos/Avatar/024-woman-13.png','logos/Avatar/010-woman-5.png','logos/Avatar/079-man-26.png','logos/Avatar/011-woman-6.png','logos/Avatar/080-woman-27.png','logos/Avatar/042-tennis-player-1.png','logos/Avatar/020-man-6.png','logos/Avatar/girl-24.png','logos/Avatar/girl-14.png','logos/Avatar/015-woman-9.png','logos/Avatar/046-volleyball.png','logos/Avatar/008-runner-1.png','logos/Avatar/022-man-8.png','logos/Avatar/090-buddhist.png','logos/Avatar/girl-9.png','logos/Avatar/033-boy.png','logos/Avatar/067-japanese.png','logos/Avatar/081-customer-service.png','logos/Avatar/099-rastafari.png','logos/Avatar/014-man-12.png','logos/Avatar/032-farmer.png','logos/Avatar/039-weightlifting.png','logos/Avatar/046-woman-19.png','logos/Avatar/026-skydiver.png','logos/Avatar/084-woman-28.png','logos/Avatar/085-man-28.png','logos/Avatar/005-woman-2.png','logos/Avatar/004-sumo.png','logos/Avatar/036-woman.png','logos/Avatar/041-man-11.png','logos/Avatar/033-wrestler-1.png','logos/Avatar/062-woman-23.png','logos/Avatar/006-golfer.png','logos/Avatar/008-woman-8.png','logos/Avatar/059-man-21.png','logos/Avatar/025-cricket.png','logos/Avatar/028-billiard.png','logos/Avatar/077-hipster-1.png','logos/Avatar/016-volleyball-player.png','logos/Avatar/girl-18.png','logos/Avatar/011-woman-5.png','logos/Avatar/017-man-9.png','logos/Avatar/035-diver.png','logos/Avatar/020-man-7.png','logos/Avatar/035-woman-1.png','logos/Avatar/boy-16.png','logos/Avatar/boy-20.png','logos/Avatar/girl-4.png','logos/Avatar/girl-26.png','logos/Avatar/030-bobsleigh.png','logos/Avatar/008-woman-4.png','logos/Avatar/boy-22.png','logos/Avatar/031-archer.png','logos/Avatar/035-hawaiian.png','logos/Avatar/060-woman-22.png','logos/Avatar/036-boy-1.png','logos/Avatar/070-woman-25.png','logos/Avatar/012-swimmer.png','logos/Avatar/007-woman-9.png','logos/Avatar/016-man-10.png','logos/Avatar/040-woman-17.png','logos/Avatar/boy-12.png','logos/Avatar/boy-14.png','logos/Avatar/girl-16.png','logos/Avatar/013-woman-8.png','logos/Avatar/018-shooter.png','logos/Avatar/017-woman-11.png','logos/Avatar/095-man-30.png','logos/Avatar/025-man-1.png','logos/Avatar/boy-19.png','logos/Avatar/047-man-13.png','logos/Avatar/003-man-1.png','logos/Avatar/064-woman-24.png','logos/Avatar/girl-23.png','logos/Avatar/boy-8.png','logos/Avatar/068-check.png','logos/Avatar/098-man-32.png','logos/Avatar/043-hipster.png','logos/Avatar/045-boxer.png','logos/Avatar/girl-22.png','logos/Avatar/boy-18.png','logos/Avatar/028-boy-5.png','logos/Avatar/002-woman-14.png','logos/Avatar/033-professor.png','logos/Avatar/005-woman-11.png','logos/Avatar/007-golfer-1.png','logos/Avatar/047-basketball-player.png','logos/Avatar/girl-3.png','logos/Avatar/044-skater-1.png','logos/Avatar/066-man-25.png','logos/Avatar/015-man-11.png','logos/Avatar/061-man-22.png','logos/Avatar/076-girl-2.png','logos/Avatar/boy.png','logos/Avatar/074-boho.png','logos/Avatar/091-professor-1.png','logos/Avatar/041-snorkeling-1.png','logos/Avatar/092-woman-31.png','logos/Avatar/043-kayak.png','logos/Avatar/boy-4.png','logos/Avatar/029-woman-15.png','logos/Avatar/006-woman-10.png','logos/Avatar/boy-9.png','logos/Avatar/026-pirate.png','logos/Avatar/097-boy-3.png','logos/Avatar/girl-1.png','logos/Avatar/boy-11.png','logos/Avatar/100-man-33.png','logos/Avatar/025-woman-14.png','logos/Avatar/032-karate.png'];
+            var loginIndex=0;
+            function loginlogo () {
+                loginimg.setAttribute("src", loginArray[imgIndex]);
+                loginIndex++;
+                    if(loginIndex>=loginArray.length){
+                        loginIndex=0;
+                    }
+            }
+            setInterval(loginlogo,3000);
+		</script>
+	
+
+	
+	 <div class="mostViewed" id="mostViewed">
+		
+	</div> 
+	 <div class="sysinfo" id="sysinfo">
+		
+	</div> 
+	 <div class="history" id="history">
+		
+	</div> 
+	 <div class="operations" >
+		<ul id="category">
+			<li id="admin_op" class="admin_op"><a href="basic.html" >Basic Operations</a></li>
+			<li id="storage" class="storage"><a href="storage.html" > Storage Management</a></li>
+			<li id="software" class="software"><a href="software.html" > Software Management </a></li>
+			<li id="fun" class="fun"><a href="..." > For Fun </a></li>
+			<li id="simple" class="simple" ><a href="admin.html">Admin Operations</a></li>
+		</ul>
+	</div> 
+	 
+		<div class="terminal" id="terminal" target="_self"><a href="terminal.html"> Terminal</a></div> 
+	<hr style="border:solid 1px firebrick;">
+	 
+		<div class="footer" id="footer">					<b><i><u>
+						<h1 id="Contact">Contact: </h1>
+			</u></i></b>
+			<ul class="social_logo">
+				<li id="git"><a href="https://github.com/gaurashish99" target="_blank"><img src="logos/social/039-github.png" alt="GitHub" height="50px"></a></li>
+
+				<li id="linkedin"><a href="https://www.linkedin.com/in/ashish-gaur-5397a717b/"target="_blank"><img src="logos/social/linkedin-logo-1.png" alt="LinkedIn" height="50px" ></a></li>
+				
+				<li id="twitter"><a href="https://twitter.com/Ash_ashishgaur"target="_blank"><img src="logos/social/013-twitter-1.png" alt="Twitter" height="50px"></a></li>
+				
+				<li id="google"><a href="https://plus.google.com/u/0/109228474020965750189"target="_blank"><img src="logos/social/035-google-plus.png" alt="Google+" height="50px"></a></li>
+				
+				<li id="wa"><a href="" target="_blank"><img src="logos/social/007-whatsapp.png" alt="Whatsapp" height="50px"></a></li>
+
+				<li id="fb"><a href="https://www.facebook.com/ashish.gaur.982" target="_blank"><img src="logos/social/facebook-logo.png" alt="Facebook" height="50px"></a></li>
+				
+				<li id="insta"><a href="https://www.instagram.com/ashish.gaur.982/" target="_blank"><img src="logos/social/034-instagram.png" alt="Instagram" height="50px"></a></li>
+				
+			</ul>
+			<ul class="social" id="social">
+
+				<li id="git"  target="_blank"><a href="https://github.com/gaurashish99">GitHub</a></li>
+
+				<li id="linkedin" target="_blank"><a href="https://www.linkedin.com/in/ashish-gaur-5397a717b/">LinkedIn</a></li>
+
+				<li id="twitter" target="_blank"><a href="https://twitter.com/Ash_ashishgaur">Twitter</a></li>
+
+				<li id="g" target="_blank"><a href="https://plus.google.com/u/0/109228474020965750189">Google+</a></li>
+
+				<li id="wa" target="_blank"><a href="">Whatsapp</a></li>
+
+				<li id="fb" target="_blank"><a href="https://www.facebook.com/ashish.gaur.982">Facebook</a></li>
+
+				<li id="insta" target="_blank"><a href="https://www.instagram.com/ashish.gaur.982/">Instagram</a></li>
+				
+			</ul>
+			<form action=""><h1>Comment: </h1>
+			<textarea name="comment" id="comment" cols="60" rows="5" placeholder="Add Your Comments Here!!!"></textarea>
+			<br>
+			<button type="submit">comment</button>
+		</form>
+					<div id="showcomment" class="showcomment">
+						
+					</div>
+			<h1 id="About"><b><i><u>About us: </u></i></b></h1>
+			<p></p>
+			<h1><a href="home.html">Home</a></h1>
+	
+	</div> 
+
+</div>
+
+<div id="load" >
+	
+		<div class="loadingdiv">
+	        <span></span>
+	        <span></span>
+	        <span></span>
+	        <span></span>
+	        <span><h4>Loading...</h4></span>
+		</div>
+	
+</div>
+
+	<!--<script>
+		
+			var loader;
+
+			function loadit (opacity) {
+				if(opacity<=0){
+					displayContent();
+				}
+				else{
+					loader.style.opacity=opacity;
+					window.setTimeout(function(){
+						loadit(opacity-0.01)
+					},100);
+				}
+			}
+
+			function displayContent(){
+				loader.style.display='none';
+				document.getElementById("content").style.display='block';
+			}
+
+			document.addEventListener('DOMContentLoaded', function(){
+				loader=document.getElementById('load');
+				loadit(1);
+			});
+
+	</script>-->
+
+
+</body>
+</html>
