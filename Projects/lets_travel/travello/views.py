@@ -26,7 +26,7 @@ def index(request):
     dest3.desc = 'The pink city.'
     dest3.img = 'destination_3.jpg'
     dest3.price = 800
-    dest3.offer = True
+    dest3.offer = False
 
     dests = [dest1, dest2, dest3]
     return render(request, 'index.html', {'dests': dests})
