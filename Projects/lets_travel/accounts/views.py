@@ -50,3 +50,12 @@ def login(request):
 
     else:
         return render(request, 'login.html')
+
+
+TODO:
+    #! redirect to login page if a user is not logged in to fetch the details of destination.
+
+
+def logout(request):
+    auth.logout(request)
+    return redirect('/')
