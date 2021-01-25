@@ -52,7 +52,7 @@ def login(request):
         return render(request, 'login.html')
 
 
-TODO:
+# TODO:
     #! redirect to login page if a user is not logged in to fetch the details of destination.
 
 
